@@ -32,7 +32,7 @@ workflows:
           # file so that lines specifying build artifact directories are removed.
           # https://github.com/pantheon-systems/example-drops-8-composer/blob/670ae310c601dabbb7b35411ff3e08e4b1fac7a3/composer.json#L67
           - run: rm web/themes/custom/default/.gitignore
-          - run: ./ci/build/php
+          - run: ./.ci/build/php
     - pantheon/visual_regression:
         requires:
           - pantheon/push
